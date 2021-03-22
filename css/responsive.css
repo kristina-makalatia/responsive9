@@ -1,0 +1,84 @@
+/* example 1 */
+/* @media (max-width:1000px) {
+    .left-block,
+    .right-block {
+        width: 200px;
+    }
+}
+
+@media (max-width:480px) {
+    .left-block {
+        background-color: red;
+    }
+    .right-block {
+       display:none;
+    }
+}
+
+@media (max-width:400px) {
+    .right-block {
+        display: block;
+    }
+} */
+
+
+/* example 2 */
+
+@media (max-width:1024px) {
+    .wraper { 
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .left-block {
+        margin-bottom: 50px;
+    }
+}
+
+/* images responsive 1 example wrap*/
+/* @media (max-width:540px) {
+    .images-wraper {
+        justify-content: center;
+    }
+} */
+
+/* images responsive 2 example column*/
+/* @media (max-width:1000px) {
+    .images-wraper {
+        flex-direction: column;
+        align-items: center;
+    }
+} */
+
+
+/* images responsive 3 example % */
+@media (max-width: 1100px) {
+    .image-box {
+        width: 48%;
+    }
+    .images-section {
+        height: auto;
+    }
+}
+
+@media (max-width:480px) {
+    .image-box {
+        width:100%;
+    }
+}
+
+
+/* header responsive */
+@media (max-width: 768px) {
+    /* .navigation {
+        display: none;
+    } */
+    .nav-li:not(.active) {
+        display: none;
+    }
+    .burger-icon {
+        display: block;
+    }
+}
